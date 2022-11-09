@@ -1,35 +1,40 @@
-var Name=('Student Record =========>');
-var rollno= +prompt('Enter Your Roll No');
-var maths= +prompt('Enter Your Maths Marks','100');
-var bio= +prompt('Enter Your Biology Marks','100');
-var urdu= +prompt('Enter Your Urdu Marks','100');
-var eng= +prompt('Enter Your English Marks','100');
-var phy= +prompt('Enter Your physics Marks','100');
-var maxmarks= 500;
-var gainedmarks= maths+bio+urdu+eng+phy;
-var percentage= (gainedmarks / maxmarks)*100;
+var a=["Ahmed", "Hasnain", "Rizwan", "Anas", "Misbah"];
+a[5]=("Sami");
+a[10]=("Arham");
+console.log(a[2]);
+console.log(a);
+
+var b=["Mango", "Orange", "Strawberry", "Grapes", "Banana"]
+b.push("Peach")
+b.pop()
+b.unshift("Cherry")
+b.shift()
+// b.slice(2,3)
+b.splice(2,1)
+b.splice(0,1)
+console.log(b)
+
+var c= b.splice(1)
+console.log(c)
 
 
-console.log(Name);
-console.log('Roll No:' , rollno);
-console.log('Maths Marks:' , maths);
-console.log('Biology Marks' , bio);
-console.log('Urdu Marks:' , urdu);
-console.log('English Marks:' , eng);
-console.log('Physics Marks:' , phy);
-console.log('Percentage:' , percentage);
+var m= ['Mango' , 'Apple' , 'Orange' , 'Pineapple' , 'Peach']
+for(var a=0; a < m.length; a++){
+    console.log(m[3])
+}
 
+// var x= ['Mango' , 'Apple' , 'Orange' , 'Pineapple' , 'Peach']
+// for(var a=0; a < x.length; a++){
+//     console.log(x, +a)
+// }
 
-if(percentage >= 90){
-    console.log('Grade: A**')
-}else if(percentage >= 80){
-    console.log('Grade: A*')
-}else if(percentage >= 70){
-    console.log('Grade: A')
-}else if(percentage >= 60){
-    console.log('Grade: B')
-}else if(percentage >= 50){
-    console.log('Grade: C')
-}else(
-    console.log('Fail')
-)
+var z=("Pineapple")
+for(var i=0; i< m.length; i++){
+    console.log(m[i])
+    if(m[i] == z){
+        alert('Okay')
+    }else{
+        alert("Not Okay")
+    }
+}
+
